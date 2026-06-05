@@ -46,9 +46,9 @@ npm install
 npm test
 
 # SSH tunnel to Vast vLLM (example)
-ssh -i ~/.ssh/vast_codex_ed25519 -o IdentitiesOnly=yes \
+ssh -i ~/.ssh/your-key -o IdentitiesOnly=yes \
   -L 18000:127.0.0.1:18000 -L 18001:127.0.0.1:18001 \
-  -p 58764 root@<host> -N &
+  -p <your-vast-port> root@<your-vast-host> -N &
 
 npm run demo
 ```

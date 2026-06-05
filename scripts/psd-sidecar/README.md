@@ -17,9 +17,9 @@ python agent.py
 SSH tunnel (from handoff):
 
 ```bash
-ssh -i ~/.ssh/vast_codex_ed25519 -o IdentitiesOnly=yes \
+ssh -i ~/.ssh/your-key -o IdentitiesOnly=yes \
   -L 18000:127.0.0.1:18000 -L 18001:127.0.0.1:18001 \
-  -p 58764 root@159.48.242.6 -N
+  -p <your-vast-port> root@<your-vast-host> -N
 ```
 
 TypeScript clients use the same URLs via `createVastImaginationClient()` or `VAST_DRAFT_BASE_URL` / `VAST_VERIFIER_BASE_URL`.
