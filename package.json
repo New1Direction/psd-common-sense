@@ -1,0 +1,47 @@
+{
+  "name": "psd-common-sense",
+  "version": "0.1.0",
+  "description": "Predictive Safety Decoding (PSD) and Common Sense Engine (CSE) for agent action planning.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/New1Direction/psd-common-sense.git"
+  },
+  "keywords": [
+    "psd",
+    "common-sense-engine",
+    "speculative-decoding",
+    "agent-safety",
+    "vllm"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/psd-agent.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
