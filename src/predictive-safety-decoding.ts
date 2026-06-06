@@ -7,8 +7,6 @@ import {
   forecastCommonSense
 } from "./common-sense.js";
 
-export type { CseVerdict as PsdBranchReadiness } from "./cse-verdict.js";
-
 export type PsdBranchSource = "agent_draft" | "human_seed" | "memory" | "safer_alternative";
 
 /** @deprecated Use `CseVerdict` from `./cse-verdict.js`. */
