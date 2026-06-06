@@ -31,7 +31,8 @@
     "build": "tsup src/index.ts --format esm --dts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "demo": "tsx src/psd-agent.ts"
+    "demo": "tsx src/psd-agent.ts",
+    "bench": "tsx bench/run-bench.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
