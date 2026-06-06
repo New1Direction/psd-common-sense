@@ -1,6 +1,6 @@
 # PSD Common Sense
 
-**Predictive Safety Decoding (PSD)** + **Common Sense Engine (CSE)** for agent workflows.
+**Predictive Speculative Decoding (PSD)** + **Common Sense Engine (CSE)** for agent workflows.
 
 PSD hides next-step branch drafting behind current-step CSE judgment — the same latency-hiding principle as [SSD (Speculative Speculative Decoding)](https://arxiv.org/abs/2603.03251), applied at the **agent action** layer instead of token inference.
 
